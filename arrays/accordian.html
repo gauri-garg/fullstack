@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent {
+            max-width: 1200px;
+            padding:0 10px ;
+            margin: 10px auto;
+            /* border: 1px solid black; */
+        }
+        .parent h1{
+            border-bottom: 1px grey solid;
+            box-shadow: 4px 4px 5px grey;
+            /* margin-bottom: 10px; */
+            padding: 10px;
+            padding-bottom: 10px;
+        }
+        .paras{
+            display: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h1 onclick="openparas(0)">Heading 1</h1>
+        <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui reiciendis aspernatur sint
+            repudiandae repellendus ex reprehenderit temporibus, molestias minima plaiste quisquam odit,
+            quae repellat fuga. Nobis, asperiores!</p>
+    </div>
+    <div class="parent">
+        <h1 onclick="openparas(1)">Heading 1</h1>
+        <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui reiciendis aspernatur sint
+            repudiandae repellendus ex reprehenderit temporibus, molestias minima plaiste quisquam odit,
+            quae repellat fuga. Nobis, asperiores!</p>
+    </div>
+    <div class="parent">
+        <h1 onclick="openparas(2)">Heading 1</h1>
+        <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui reiciendis aspernatur sint
+            repudiandae repellendus ex reprehenderit temporibus, molestias minima plaiste quisquam odit,
+            quae repellat fuga. Nobis, asperiores!</p>
+    </div>
+    <div class="parent">
+        <h1 onclick="openparas(3)">Heading 1</h1>
+        <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui reiciendis aspernatur sint
+            repudiandae repellendus ex reprehenderit temporibus, molestias minima plaiste quisquam odit,
+            quae repellat fuga. Nobis, asperiores!</p>
+    </div>
+    <div class="parent">
+        <h1 onclick="openparas(4)">Heading 1</h1>
+        <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui reiciendis aspernatur sint
+            repudiandae repellendus ex reprehenderit temporibus, molestias minima plaiste quisquam odit,
+            quae repellat fuga. Nobis, asperiores!</p>
+    </div>
+    <div class="parent">
+        <h1 onclick="openparas(5)">Heading 1</h1>
+        <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui reiciendis aspernatur sint
+            repudiandae repellendus ex reprehenderit temporibus, molestias minima plaiste quisquam odit,
+            quae repellat fuga. Nobis, asperiores!</p>
+    </div>
+    <div class="parent">
+        <h1 onclick="openparas(6)">Heading 1</h1>
+        <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui reiciendis aspernatur sint
+            repudiandae repellendus ex reprehenderit temporibus, molestias minima plaiste quisquam odit,
+            quae repellat fuga. Nobis, asperiores!</p>
+    </div>
+    <div class="parent">
+        <h1 onclick="openparas(7)">Heading 1</h1>
+        <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui reiciendis aspernatur sint
+            repudiandae repellendus ex reprehenderit temporibus, molestias minima plaiste quisquam odit,
+            quae repellat fuga. Nobis, asperiores!</p>
+    </div>
+    
+   
+
+    <script>
+        var paras = document.getElementsByClassName("paras");
+        function openparas(index){
+            paras[index].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

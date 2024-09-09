@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        #demo{
+            width: 150px;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            margin: 10px auto;
+            display: block;
+            border: 2px solid green;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo"><i> 0</i></h1>
+    <button onclick="inc()">+</button>
+    <button onclick="desc()">-</button>
+    <button onclick="reset()">reset</button>
+    
+    <script>
+        let demoBox =document.getElementById("demo");
+        let count = 0;
+        function inc(){
+            if(count == 10 ) return;
+            count++;
+            // demoBox.innerText = `<i> ${count} </i>`;
+            demoBox.innerHTML = `<i> ${count} </i>`;
+        }
+        function desc(){
+            count--;
+            // demoBox.innerText = `<i> ${count} </i>`;
+            demoBox.innerHTML = `<i style="color:red"> ${count} </i>`;
+        }
+        function reset(){
+            demoBox.innerText = "0";
+        }
+    </script>
+</body>
+</html>

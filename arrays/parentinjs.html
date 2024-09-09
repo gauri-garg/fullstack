@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            name: "ntr",
+            age: 19,
+            email:"ntr15276@gmail.com",
+            getdata:function(){
+                // console.log("the email of" + obj.name + "is" + obj.email);
+                console.log(`The email of ${this.name} is ${this.email}`); //es6 templet literls
+            }
+        }
+    obj.getdata();        
+        
+    let obj2 = {
+            name: "qwert",
+            age: 29,
+            email:"ntr152@gmail.com",
+            getdata:function(){
+                // console.log("the email of" + obj.name + "is" + obj.email);
+                console.log(`The email of ${this.name} is ${this.email}`) //es6 templet literls
+            }
+        }
+    obj2.getdata(); 
+    </script>
+</body>
+</html>

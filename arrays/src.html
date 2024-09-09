@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="mainImage" src="img/2022-06-26.png" alt="" style="width: 100px; height: 100px;">
+    </div>
+    <img src="img/young-beautiful-asian-businesswoman-against-brown-background_251136-10828.jpg"  onclick="getsrc(this)" alt="" style="width: 100px; height: 100px;">
+    <img src="img/2022-06-26.png" onclick="getsrc(this)" alt="" style="width: 100px; height: 100px;">
+
+    <script>
+        let mainImg = document.getElementById("mainImage")
+        function getsrc(imageTag){
+            mainImg.src = imageTag.src;
+            console.log(imageTag);
+        }
+    </script>
+</body>
+</html>

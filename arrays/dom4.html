@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            width: 100px;
+            float: left;
+            text-align: center;
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <button onclick="first()">first</button>
+    <button onclick="second()">second</button>
+
+    <script>
+        var boxes = document.getElementsByClassName("box");
+        console.log(boxes);
+        function first(){
+            boxes[1].innerText = boxes[0].innerText;
+            boxes[0].innerText = "";
+        }
+        function second(){
+            boxes[2].innerText = boxes[1].innerText;
+            boxes[1].innerText = "";
+        }
+        
+        
+    </script>
+</body>
+</html>

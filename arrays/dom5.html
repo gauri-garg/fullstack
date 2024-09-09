@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text"  id="inp" onkeyup="demo()">
+    <h1 id="res"></h1> -->
+
+
+
+    <input type="password" id="passBox">
+    <button id="btn" onclick="togglepass()"><i class="fa-solid fa-eye"></i></button>
+
+    <script>
+        let passBox = document.getElementById("passBox");
+        let btn = document.getElementById("btn");
+
+        function togglepass() {
+            if (passBox.type === "password") {
+                passBox.type = "text";
+                btn.innerHTML = `<i class="fa-solid fa-eye-slash"></i>`;
+            } else {
+                passBox.type = "password";
+                btn.innerHTML = `<i class="fa-solid fa-eye"></i>`;
+            }
+        }
+        // var inp = document.getElementById("inp");
+        // var res = document.getElementById("res");
+        // function demo(){
+        // console.log(inp.value);
+        // res.innerHTML = inp.value;
+        // }
+    </script>
+</body>
+
+</html>
