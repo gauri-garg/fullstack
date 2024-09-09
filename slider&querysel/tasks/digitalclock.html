@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: aquamarine;
+        }
+
+        #clock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20% auto;
+            color: black;
+            font-size: 100px;
+            font-family: Orbitron;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body onload="runClock()">
+    <div id="clock">00/00/00</div>
+
+    <script>
+        function runClock() {
+            var d = new Date();
+            // clock.innerText = d.toLocaleTimeString() + " " + d.toDateString();
+
+            var h = d.getHours();
+            if (h > 12) {
+                phase = "PM";
+                h = h - 12
+            }
+
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+
+            clock.innerHTML = `${h}:${m}:${s} ${phase}`;
+        }
+        setInterval(runClock, 1000);
+    </script>
+</body>
+
+</html>

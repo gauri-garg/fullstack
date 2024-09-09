@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+        h1 {
+            font-size: 100px;
+            text-align: center;
+        }
+
+        .parent {
+            width: 500px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            font-size: 30px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>0</h1>
+    <div class="parent">
+        <button id="start">Start</button>
+        <button id="stopBtn" onclick="stop()">Stop</button>
+    </div>
+
+    <script>
+        let heading = document.querySelector("h1");
+        let start = document.querySelector("#start");
+        // let stop = document.querySelector("#stop");
+        let count = 0;
+        var countIntervalHolder;
+        start.addEventListener(
+            "click",
+            function(){
+                start.disabled = true;
+                countIntervalHolder = setInterval(
+                    function(){
+                        // if(count == 10)return stop();
+                        count++;
+                        heading.innerText = count;
+                    },
+                    1000,
+                )
+            }
+        )
+
+            function stop(){
+                start.disabled = false;
+                clearInterval(countIntervalHolder);
+                heading.innerText = 0;
+                count =0;
+            }
+    </script>
+</body>
+
+</html>
