@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Load jQuery first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Load jQuery UI after jQuery -->
+    <script src="jquery-ui-1.13.3.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.3.custom/jquery-ui.min.css">
+
+    <style>
+        #drag {
+            width: 1px;
+            height: 1px;
+            background-color: black;
+            padding: 30px;
+            color: black;
+            text-align: center;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    </style>
+    
+    <script>
+        $(function() {
+            $("#drag").draggable({
+                scroll:false,
+                axis:"x",
+                cursorAt:{bottom:10},
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="drag">
+        <p>Drag Me</p>
+    </div>
+</body>
+</html>

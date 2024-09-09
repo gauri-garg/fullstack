@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        #select{
+            width: 60%;
+            margin: 0;
+            list-style-type: none;
+            padding: 0;
+        }
+        #short , #short1 {
+            width: 140px;
+            margin: 0;
+            list-style-type: none;
+            padding: 0;
+            float: left;
+            border: 2px solid black ;
+            background-color: antiquewhite;
+        }
+        #select li{
+            margin: 3px;
+            padding: 8px;
+            font-size: 20px;
+            height: 22px;
+        }
+
+        #short li , #short1 li {
+            margin: 3px;
+            padding: 8px;
+            font-size: 20px;
+            height: 22px;
+        }
+
+        #select .ui-selecting{
+            background-color: antiquewhite;
+        }
+
+        #select .ui-selected{
+            background-color: aquamarine;
+            color:rebeccapurple;
+        }
+    </style>
+
+    <script>
+        // $(function(){
+        //     $("#short").selectable();
+        // });
+        $(function(){
+            $(" #short , #short1 ").sortable({
+                connectWith:".connectSortable",
+                placeholder:"ui-state-highlight"
+            }).disableSelection();
+        });
+    </script>
+</head>
+<body>
+    <!-- <ol id="select">
+        <li class="ui-widget-content">item 1</li>
+        <li class="ui-widget-content">item 2</li>
+        <li class="ui-widget-content">item 3</li>
+        <li class="ui-widget-content">item 4</li>
+        <li class="ui-widget-content">item 5</li>
+        <li class="ui-widget-content">item 6</li>
+    </ol> -->
+
+    <ol id="short" class="connectSortable">
+        <li class="ui-state-default">item 1</li>
+        <li class="ui-state-default">item 2</li>
+        <li class="ui-state-default">item 3</li>
+        <li class="ui-state-default">item 4</li>
+        <li class="ui-state-default">item 5</li>
+        <li class="ui-state-default">item 6</li>
+    </ol>
+
+    <ol id="short1" class="connectSortable">
+        <li class="ui-widget-content">value 1</li>
+        <li class="ui-widget-content">value 2</li>
+        <li class="ui-widget-content">value 3</li>
+        <li class="ui-widget-content">value 4</li>
+        <li class="ui-widget-content">value 5</li>
+        <li class="ui-widget-content">value 6</li>
+    </ol>
+
+</body>
+</html>

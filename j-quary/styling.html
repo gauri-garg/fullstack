@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        .fontset{
+            font-weight: bold;
+            font-size: xx-large;
+            font-family: verdana;
+        }
+        .colorset{
+            color: rgb(43, 185, 64);
+            /* width: 500px; */
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#add").click(function(){
+                // $("h1, h3 ").addClass("colorset")
+                // $("div , p").addClass("fontset");
+                // $("h1 ").toggleClass("colorset")
+                // alert("color:" + $("h1").css("color"))
+                // $("h1 ").css("background-color" , "red")
+                $("h1").css({"background-color":"red" , "font-size":"40px"})
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 class="colorset">Hello World</h1>
+    <h3>Small Heading</h3>
+    <p>This is a peragraph!</p>
+    <div>
+        <p>This text is a div</p>
+    </div>
+    <button type="button" id="add">Add & Remove</button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        $(function(){
+            $("#dialog").dialog({
+                autoOpen:false,
+                show:{
+                    effect:"blind",
+                    duration:1000
+                },
+                hide:{
+                    effect:"explode",
+                    duration:1000
+                },
+                resizable:false,
+                height:"auto",
+                width:500,
+                modal:true,
+                buttons:{
+                    "Are You Sure":function(){
+                        $(this).dialog("close")
+                    },
+                    cancel:function()
+                    {
+                        $(this).dialog("close")
+                    },
+                },
+            });
+        $("#open").on("click",function(){
+            $("#dialog").dialog("open");
+        });
+        });
+    </script>
+</head>
+<body>
+    <div id="dialog" title="Basic-Dialog" >
+        <p>Lorem ipsuimos facere sed sequi obcaecati soluta ipsa consequuntur saepe laudantium minus sint suscipit.</p>
+    </div>
+    <button id="open" class="ui-widget" type="button">Open</button>
+</body>
+</html>

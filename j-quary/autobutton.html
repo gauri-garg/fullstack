@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        $(function(){
+            var availableLang = [
+                "Hindi", "English" , "german" 
+            ];
+            $("#lang").autocomplete({
+                source:availableLang
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <label for="lang">language</label>
+        <input id="lang" placeholder="Language">
+        <button type="button">Enter</button>
+    </div>
+
+    <div class="ui-widget">
+        <h1>Widget Buttons</h1>
+        <button type="button">A Button</button>
+        <input type="button" value="B-Button">
+    </div>
+
+    <h1>CSS Buttons</h1>
+    <button type="button" class="ui-button ui-widget ui-corner-all" value="Input Button">css button</button>
+    <a href="#" class="ui-button ui-widget ui-corner-all" >CSS Button</a>
+</body>
+</html>

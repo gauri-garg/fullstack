@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <style>
+        #red , #blue , #yellow{
+            width: 300px;
+            float: left;
+            margin: 15px;
+        }
+        #swatch{
+            width: 120px;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 400px;
+            background-image:none;
+        }
+        #red .ui-slider-range{
+            background:#ef2929 ;
+        }
+        #red .ui-slider-handle{
+            background: #fe2929;
+        }
+
+        #blue .ui-slider-range{
+            background:blue ;
+        }
+        #blue .ui-slider-handle{
+            background: blue;
+        }
+
+        #yellow .ui-slider-range{
+            background:yellow ;
+        }
+        #yellow .ui-slider-handle{
+            background: yellow;
+        }
+    </style>
+
+    <script>
+        $(function(){
+            function hexFromRGB(r,g,b){
+                let hex= [r.toString(16),g.toString(16),b.toStrig(16)];
+                $.each(hex,function(nr,val){
+                    if(val.length ===1){
+                        hex[nr]="0" + val;
+                    }
+                });
+                return hex.join("").toUpperCase();
+            }
+            $("#red , #blue , #yellow").slider({
+                orientation:"horizontal",
+                range:"min",
+                max:255,
+                value:122,
+                // slide:refreshSwatch,
+                // change:refreshSwatch,
+            });
+            $("#red").slider("value", 255);
+            $("#blue").slider("value", 155);
+            $("#yellow").slider("value", 55);
+
+
+        })
+    </script>
+</head>
+<body class="ui-widget-content">
+    <p>Simlpe Color Picker</p>
+    <div id="red" ></div>
+    <div id="blue" ></div>
+    <div id="yellow" ></div>
+    <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+    <!-- <div id="slider"></div> -->
+</body>
+</html>

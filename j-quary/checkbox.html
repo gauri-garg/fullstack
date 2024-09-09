@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <title>jqueryUI CheckBOx Radio & Datepicker </title>
+    <style>
+
+    </style>
+    <script>
+        $(function(){
+            // $("input").checkboxradio({
+            //     icon:false
+            // });
+            $("#datepicker").datepicker({
+                showOtherMonths:true,
+                selectOtherMonths:true,
+                showButtonPanel:true,
+                changeMonth:true,
+                changeYear:true,
+                numberOfMonths:1,
+
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- <div class="ui-widget">
+    <h1>jqueryUI CheckBOx Radio & Datepicker</h1>
+    <h3>Radio Group</h3>
+    <fieldset>
+        <legend>Select Your Gender </legend>
+        <label for="radio-1">Male</label>
+        <input type="radio" name="radio-1" id="radio-1">
+
+        <label for="radio-2">Female</label>
+        <input type="radio" name="radio-1" id="radio-2">
+
+        <label for="radio-3">Transgender</label>
+        <input type="radio" name="radio-1" id="radio-3">
+    </fieldset>
+
+    <h2>CheckBox</h2>
+    <fieldset>
+        <legend>Course Ratings:</legend>
+        <label for="Checkbox-1">2-star</label>
+        <input type="checkbox" name="checkbox-1" id="checkbox-1">
+
+        <label for="Checkbox-2">3-star</label>
+        <input type="checkbox" name="checkbox-1" id="checkbox-2">
+
+        <label for="Checkbox-3">4-star</label>
+        <input type="checkbox" name="checkbox-1" id="checkbox-3">
+
+        <label for="Checkbox-4">5-star</label>
+        <input type="checkbox" name="checkbox-1" id="checkbox-4">
+    </fieldset> -->
+    <div class="ui-widget">
+        <p><label for="datepicker"> Date: </label>
+        <input type="text" id="datepicker"></p>
+    </div>
+</div>
+</body>
+</html>

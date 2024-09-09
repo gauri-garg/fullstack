@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        #resize{
+            width: 150px;
+            height: 200px;
+            padding: 10px;
+            background-position: top left;
+        }
+        #container{
+            width: 300px;
+            height: 350px;
+            padding: 10px;
+        }
+        #resize h3{
+            text-align: center;
+            margin: 0;
+        }
+        #container h3{
+            text-align: center;
+            margin: 0;
+        }
+        #text{
+            width: 150px;
+            margin-top: 10px;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        $(function(){
+            $("#resize").resizable({
+                alsoResize:"#container",
+                // aspectRatio:16/9
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="container" class="ui-widget-content">
+        <h3 class="ui-widget-header">container</h3>
+        <div id="resize" class="ui-widget-content">
+            <h3 class="ui-widget-header">Resizeable</h3>
+        </div>
+    </div>
+</body>
+</html>

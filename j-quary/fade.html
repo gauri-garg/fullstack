@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        div{
+            width: 90px;
+            height: 90px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        #div1{
+            
+            background-color: aqua;
+            /* display: none; */
+        }
+        #div2{
+            background-color: red;
+            /* display: none; */
+        }
+        #div3{
+            background-color: yellow;
+            /* display: none; */
+        }
+    </style>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                // $("#div1").fadeIn(4000);
+                // $("#div2").fadeIn(7000);
+                // $("#div3").fadeIn(10000);
+                // $("#div1").fadeOut();
+                // $("#div2").fadeOut();
+                // $("#div3").fadeOut();
+                // $("#div1").fadeToggle();
+                // $("#div2").fadeToggle();
+                // $("#div3").fadeToggle();
+                $("#div1").fadeTo("slow" , .15 );
+                $("#div2").fadeTo("fast" , .4);
+                $("#div3").fadeTo("middle" ,.15);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>HELLO WORLD</h1>
+    <button type="button">click to fade!!</button>
+    <div id="div1">DELHI</div>
+    <div id="div2">MUMBAI</div>
+    <div id="div3">GUJ..</div>
+</body>
+</html>

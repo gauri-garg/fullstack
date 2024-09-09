@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <style>
+        #flip , #panel{
+            padding: 5px;
+            text-align: center;
+            background-color: antiquewhite;
+            border: solid 3px antiquewhite;
+        }
+        #panel{
+                padding: 50px;
+                /* display: none; */
+            }
+            #anti{
+                position: absolute;
+                width: 100px;
+                height:100px;
+                /* padding:20px; */
+                background-color: aquamarine;
+            }
+            button{
+                margin: 20px 0 20px 0;
+            }
+            p{
+                padding: 5px;
+                text-align: center;
+                background-color: antiquewhite;
+                border: solid 3px antiquewhite;
+                margin-top: 150px;
+                width: 200px;
+                height:100px;
+                margin-left: 250px;
+
+            }
+    </style>
+    <script>
+        $(function(){
+            // $("#flip").click(function(){
+            //     $("#panel").slideDown("slow");
+            // })
+
+
+
+            // $("#flip").click(function(){
+            //     $("#panel").slideToggle("slow");
+            // });
+
+
+            $("button").click(function(){
+                // $("#anti").animate({left: "250px" , height:"150px" , opacity:".5" , width:"150px"});
+                $("p").css("color" , "red").slideUp(2000).slideDown(2000);
+            })
+        });
+    </script>
+</head>
+<body>
+
+    <div id="flip">click to see the panel</div>
+    <div id="panel">hello !! this is a panel</div>
+    <button type="button">click here!!</button>
+    <div id="anti">hello !! this is a panel</div>
+    <p>qwertyuiopokjhgfcxdfvbn</p>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <title>Document</title>
+
+    <style>
+
+    </style>
+
+    <script>
+        $(function(){
+            // $("#progressbar").progressbar({
+            //     value:50
+            // });
+            let progressbar=$("#progressbar"),
+            Progresslabel=$(".progress-label");
+            progressbar.progressbar({
+                value:false,
+                change:function(){
+                    Progresslabel.text(progressbar.progressbar("value") + "%" );
+                },
+                complete:function(){
+                    progresslabel.text("Completed")
+                }
+            });
+            function progress(){
+                let val=progressbar.progressbar
+                ("value") || 0;
+                progressbar.progressbar("value" , val + 2 );
+                if(val < 99)
+                {
+                    setTimeout(progress,80);
+                }
+            }
+            setTimeout(progress,2000);
+        });
+    </script>
+
+</head>
+<body>
+    <div id="progressbar">
+        <div class="Progress-label">Loading...</div>
+    </div>
+</body>
+</html>

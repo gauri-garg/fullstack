@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            //Example // append
+
+            $("#text").click(function(){
+                $("p").append(" World");
+            });
+            $("#lst").click(function(){
+                $("ol").append("<li>Item no. 3</li>");
+            })
+
+
+            // example of append to
+
+            // $("#text").click(function(){
+            //     $("<span> World!</span>").appendTo("p");
+            // });
+
+            // example of prepend
+
+        });
+    </script>
+</head>
+<body>
+    <p>Hello</p>
+    <!-- <ol>
+        <li>Item no. 1</li>
+        <li>Item no. 2</li>
+    </ol> -->
+    <button type="button" id="text">Add Text</button>
+    <button type="button" id="lst">Add Lst</button>
+    
+    
+</body>
+</html>

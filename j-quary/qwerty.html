@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            $("#set").click(function(){
+                $("#text").text("Hello How Are you.");
+                $("#text").html("<b>Hello</b> are you.");
+                $("#inp").val("shyam singh");
+                $("#abc").attr("href", "https://www.google.co.in");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="text"> This is <strong><em>Paragraph</em></strong></p>
+    Name: <input type="text" name="text1" value="Hello" id="inp">
+    <a href="https://www.youtube.com/watch?v=TO-_3tck2tg" id="abc">yt</a>
+    <button id="txt" type="button">text</button>
+    <button id="set" type="button">set</button>
+</body>
+</html>
