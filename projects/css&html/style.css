@@ -1,0 +1,160 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Header Started */
+#container{
+    width: 1350px;
+    /* border: solid 2px red; */
+    margin: 0px auto;
+}
+#header{
+    height: 100px;
+    padding: 10px 0;
+
+}
+#logo{
+    float: left;
+}
+ #logo h1 a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 60px;
+    color: red;
+ }
+#searchbox{
+    float: right;
+    background-color: rgb(98, 98, 249);
+    width: 380px;
+    margin-top: 25px;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 5px;
+    padding: 25px 25px 0 25px;
+}
+.submit{
+    margin-left: 70px;
+    width: 60px;
+    height: 22px;
+    background-color: rgb(66, 63, 63);
+    border-radius: 4px;
+    color: white;
+    border: white solid 1px;
+    font-weight: bold;
+}
+.text{
+    width: 220px;
+    height: 25px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* header completed */
+
+/* Menu Started */
+
+#menu{
+    background-color: rgb(94, 94, 238);
+    height: 25px;
+    padding: 10px 0 ; 
+}
+#menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    border-right: 2px solid antiquewhite;
+    padding:0 80px;
+    height: 20px;
+}
+#menu a:last-child{
+    border: none;
+}
+#menu .log{
+    color: rgb(134, 42, 42);
+}
+#menu a:hover , #menu a.active{
+    color: #ec3535;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/*menu completed  */
+
+/* intro startrd */
+#intro{
+    background-color: rgb(94, 94, 238);
+    height: 305px;
+    padding: 10px 0 ;
+    margin-top: 5px; 
+    
+}
+#intro h1{
+    padding: 10px 30px;
+    font-size: 40px;
+    font-weight: bold; 
+}
+#intro p{
+    font-size: 20px;
+    padding: 0px  30px;
+    text-align: justify;
+}
+
+/* intro cpmpleted */
+
+/* sidebars started */
+
+.sidebar{
+    padding: 10px 0 ;
+    margin-top: 20px;
+    height: 300px;
+    height: 500px;
+    width: 600px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+#leftside{
+    float: left;
+    border: solid 1px rgb(33, 190, 253);
+}
+#leftside h3{
+    font-size: 32px;
+}
+#rightside{
+    float: right;
+    border: solid 1px rgb(33, 190, 253);
+}
+#rightside h3{
+    font-size: 32px;
+}
+/* .sidebar ul{
+    padding-top: 10px;
+} */
+#leftside ul li{
+    padding: 5px 0 5px 10px;
+}
+#rightside ul li{
+    padding: 20px 0 20px 30px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+}
+.sidebar ul li a:hover{
+    font-size: 34px;
+    color: rgb(94, 94, 238);
+}
+.clear{
+    clear: both;
+}
+
+#footer{
+    background-color:rgb(33, 190, 253) ;
+    margin-top: 15px;
+    height: 50px;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
