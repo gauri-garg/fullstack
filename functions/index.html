@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var num = 4;
+        // //user declare
+        // function number() //declare
+        // { //defination
+        //     console.log('hello user!! walcome home');
+        // }
+
+        // number(); //calling
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+        // number();
+
+        // function names(name){
+        //     console.log("hello" , name);
+        // }
+        // names("rahul")
+        // names("ram")
+        // names("karan")
+        // names("aadi")
+
+        // function add(a,b){
+        //     console.log(a*b);
+        // }
+        // add(2,4);
+        // add(20,45);
+
+        // function calc(a, b, operator) {
+        //     if (operator == "*") {
+        //         console.log(a * b);
+        //     } else if (operator == "+") {
+        //         console.log(a + b);
+        //     } else if (operator == "/") {
+        //         console.log(a / b);
+        //     } else {
+        //         console.error("invalid operator");
+        //     }
+        // }
+
+        // calc(4, 3, "+");
+        // calc(6, 7, "*");
+        // calc(64, 12, "/");
+        // calc(3, 5, "raju")
+
+
+        //     function add (a,b){
+        //         // console.log(a+b);
+        //         return a+b;
+        //     }
+
+        //    var x = add(3,4);
+        //    var y = add(4,x);
+        //    var z = add(6,y);
+        //    var p = add(y,z);
+        //    console.log(p);
+
+        //array questions //*
+        // 1. write a javascript function to print table of a given  numbers.
+
+        // function table(num){
+        //     for(var i = 1; i <= 10 ; i++){
+        //         console.log(i * num);
+        //     }
+        // }
+
+        // table(5);
+        // table(6);
+
+
+        //2. wirte a javascript function to print series of numbers.
+
+        // function number(start , end){
+        //     for(var i = start ; i <= end ; i++){
+        //         console.log(i);
+        //     }
+        // }
+        // number(100 , 150);
+
+        //3. write a javascript function which returns the sum of a givin array.
+
+        function sum(arr) {
+            var total = 0;
+            for (var i = 0; i < arr.length; i++) {
+                total += arr[i];
+            }
+            return total;
+        }
+
+        var nums = [2, 4, 5, 7, 78, 23, 5];
+        var res1 = sum(nums);
+        console.log(res1);
+
+        var nums2 = [200, 300, 400, 500];
+        var res2 = sum(nums2);
+        console.log(res2);
+
+        //4. write a javascript function to find all the even numbers between a given range.
+
+        // function nums(start , end){
+        //     for(var i =start ; i <= end ; i++ ){
+        //         if(i % 2 == 0 ){
+        //             console.log(i);
+        //         };
+        //     };
+        // };
+        // nums(10 , 1000);
+
+
+
+        //5. write a javascript function which returns "true" if a number is prime use it returns   "false".
+
+
+
+
+        //6. print all the prime numbers in between a range using function.
+        // function findeven(start, end) {
+        //     for (let i = start; i <= end; i++) {
+        //         let isprime = true;
+        //         for(let j = 2 ; j < i ; j++){
+        //             if(i % j == 0){
+        //                 isprime = false ;
+        //                 break;
+        //             };
+        //         };
+        //             if(isprime == true){
+        //                 console.log(i);
+        //         };
+        //     };
+        // };
+        // findeven(10, 50)
+
+        // function checkprime()
+
+        // Assigning values
+        // let val1 = 5;
+        // let val2 = 5;
+
+        // // Strict Inequality Operator
+        // console.log(val1 !== val2);
+
+        // let i = 0 ;
+        // while(i < 200 ){
+        //     console.log(i);
+        //     i++;
+        // }
+
+        // let i = 0;
+        // do {
+        //     console.log(i);
+        //     i++;
+        // } 
+        // while (i < 6);
+
+
+        // const obj = { a: 1, b: 4, c: 7 };
+
+        // for (let prop in obj) {
+        //     console.log(prop + ': ' + obj[prop]);
+        // }
+
+        const arr = [1, 3, 4];
+        const newArr = arr.map(val => val * 2);
+        console.log(newArr);
+
+
+    </script>
+</body>
+
+</html>
