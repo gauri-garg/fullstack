@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Array</h1>
+    <p id="result">1234567890</p>
+
+    <script>
+        const student=["rajesh" , "suresh" , "ram" ,"aman"];
+        // const studentF=student.slice(1);
+        // student.splice(1,1,"seema" , "geeta");
+        // student.pop();
+        // student.shift("mp");
+        // student.unshift("mpr");
+        var str="<ul>";
+            student.forEach(myfunction);
+            str+="</ul>"
+            function myfunction(value){
+                str+="<li>" + value + "</li>";
+            }
+        document.getElementById("result").innerHTML=student.join("-");
+        student.sort(); 
+        // student.reverse();  
+        document.getElementById("result").innerHTML=student.join("-");  
+        // console.log(student,str);
+        </script>
+</body>
+</html>

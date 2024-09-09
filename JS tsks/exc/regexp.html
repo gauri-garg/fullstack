@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin: 20px;
+            padding: 20px;
+            color: green;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>A regular Expression is a sequence of characters that forms a search pattern</h3>
+    <h3>the search pattern can be used for text sarch and text replace operations .</h3>
+    <p id="res"></p>
+
+    <script>
+        let str="i am learning JAvascript And regular Expression and strings 1234567890.";
+        let n=str.match(/[1234567890]/g);
+        document.getElementById("res").innerHTML=n;
+    </script>
+</body>
+</html>

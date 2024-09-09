@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS Error Handling</h1>
+    <h3>Try Catch Throw Finally</h3>
+    <p id="res"></p>
+
+    <script>
+        function setCookies(cname, cvalue, expday) {
+            const d = new Date();
+            d.setTime(d.getTime() + (expday * 24 * 60 * 60 * 1000));
+            let expire = "Expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expire + ";path=/";
+        }
+        function getCookies(cname) {
+            let name = cname + "=";
+            let deCookies = decodeURIComponent(document.cookie);
+            let ca = deCookies.split(";");
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1)
+                    if (c.indexOf(cname) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+            }
+            return "";
+        }
+        function checkCookies(){
+            let usr=getCookies(username)
+        }
+    </script>
+</body>
+
+</html>

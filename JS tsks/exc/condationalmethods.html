@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-weight: bold;
+            font-size: 30px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Js Condational Methods</h1>
+    <p id="result"></p>
+    <script>
+        // if (new Date ().getHours()<=18){
+        //     document.getElementById("result").innerHTML='Good Evening!!!'
+        // }
+        // else if (new Date ().getHours()<=18){
+        //     document.getElementById("result").innerHTML='Good Afternoon!!!';
+        // }
+        // console.log(result);
+
+        let day;
+        switch (new Date ().getDay())
+        {
+            case 0:
+                day="Sunday";
+                break;
+                case 1:
+                day="Monday";
+                break;
+                case 2:
+                day="Tuesday";
+                break;
+                case 3:
+                day="Wednesday";
+                break;
+                case 4:
+                day="thrusday";
+                break;
+                case 5:
+                day="Friday";
+                break;
+                case 6:
+                day="Saturday";
+                break;
+        };
+        // console.log(day);
+        document.getElementById("result").innerHTML=day;
+    </script>
+</body>
+</html>
