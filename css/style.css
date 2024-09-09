@@ -1,0 +1,39 @@
+body {
+    background-color: white;
+    background-image: url(images/download.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+p{
+    border: 2px solid rgb(134, 254, 100);
+    text-align: center;
+    font-size: 32px;
+    border-radius:16px;
+    background-color: black;
+    color: greenyellow;
+    /* margin: 25px 50px 25px 50px; */
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#p2{
+    /* opacity: 0.5; */
+    color: black ;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
